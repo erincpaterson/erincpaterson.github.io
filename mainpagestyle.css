@@ -1,0 +1,37 @@
+p {
+    color: olive
+    font-size: 26px;
+}
+header div{
+    background-color: orange;
+    padding: 2px;
+}
+#about {
+    border: 3px solid red;
+}
+#interests {
+    background-color: aliceblue;
+    padding: 10px;
+}
+.favorite {
+    background-color: yellow;
+}
+.introtext {
+    border: 2px solid steelblue;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 12px;
+}
+/* links */
+a {
+    color: darkblue;
+    text-decoration: underline;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration-color: aqua;
+    color: aqua;
+a:focus {
+    color: white;
+    background-color: orange
+}
