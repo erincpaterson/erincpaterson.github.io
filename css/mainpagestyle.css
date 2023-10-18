@@ -1,6 +1,6 @@
 p {
     color: olive
-    font-size: 26px;
+    font-size 26px;
 }
 header div{
     background-color: orange;
@@ -31,6 +31,7 @@ a:hover {
     font-weight: bold;
     text-decoration-color: aqua;
     color: aqua;
+}
 a:focus {
     color: white;
     background-color: orange
