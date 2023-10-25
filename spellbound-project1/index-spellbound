@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellbound Cafe</title>
+    <link href="spellbound-stylesheet.css" rel="spellbound-stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tea-collection">Shop Our Teas</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div>
+
+            <!-- Insert Photo Carasol Here -->
+
+        </div>
+    
+        <section id="#shop-teas">
+            <!-- Insert Four Herbal Tea Link Buttons Here -->
+        </section>
+
+        <section id="about">
+            <section class="about-textstyle">
+            <h1>About Spellbound</h1>
+                <p>About Spellbound Cafe text, a place where you can find magic in your morning cup of tea or coffee. Tea reading is the divination practice dating back thousands of years. Over this time, many symbols and interpretations have been collected. </p>
+                <p>This is where we get into further detail. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur unde ab. Voluptatibus voluptatum maxime error dicta dolorum dolores modi iure quo quibusdam consectetur fugit quisquam magnam recusandae, atque laudantium!. </p>
+                <a href="#" target="">Button for "Shop Now"</a>
+        </section>
+
+        <img src="" alt="Name Namerson, Cafe Owner">
+        
+        <section id="contact-us">
+            <section class="contact-textstyle">
+            <h2>Contact Us</h2>
+                <ul>
+                <li><a href="http://instagram.com"><img src="" alt="Instagram Logo and Link">@spellboundcafe</a></li>
+                <li><a href="http://facebook.com"><img src="" alt="Facebook Logo and Link">@spellboundcafe</a></li>
+                <li><a href="mailto:info@spellboundcafe.com?subject=Website%20Contact%20Prompt"><img src="" alt="Mail Letter Icon">info@spellboundcafe.com</a></li>
+                </ul>
+        </section>
+
+        <section id="news-letter">
+            <section class="contact-textstyle">
+            <h2>News Letter</h2>
+                <p>Join our Newsletter to recieve special promotions and information about upcoming events!</p>
+                <input type="text" name="email">
+        </section>
+
+        <section id="address">
+            <section class="contact-textstyle">
+            <h2>Address</h2>
+                <p>1234 SW Address St,<br>
+                City, ST 12345</p>
+                <p>(123)561-891</p>
+            </section>
+    </main>
+
+    <footer>
+        <hr>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        
+        <p><small>&copy;2023 Spellbound Tea Company, All Rights Reserved</small></p>
+    </footer>
+</body>
+</html>
