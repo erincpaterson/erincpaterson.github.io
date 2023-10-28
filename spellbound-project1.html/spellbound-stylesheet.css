@@ -1,0 +1,44 @@
+* {box-sizing: border-box;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+}
+
+img {
+  width:100%;
+}
+
+a { text-decoration:none;}
+a:hover {
+  color:cornflowerblue;
+}
+.hero {
+  background-color:rgb(3, 80, 72);
+  width:100vw;
+}
+.hero div {
+  padding:20px;
+}
+.teas {
+  background-color: #974554;
+  display:flex;
+  justify-content: center;
+}
+.teas div {
+  flex: 1;
+  height:100%;
+}
+.teas .rose {
+  background-image: url('images/rose-bg.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.teas .rose .content {
+  background-color: rgba(151, 69, 84, 0.7); 
+  padding:20px;
+  color: white;
+}
+.align-right{ text-align: right;}
