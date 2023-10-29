@@ -26,7 +26,7 @@
         <div class="logo"><a href=#><img class="logo" src="spellbound-images/spell-logo.svg" width="130" height="47" alt="Spellbound S logo"></a></div>
         
         <ul class="icons">
-            <li><a href="#" class="shopping-bag"><img src="spellbound-images/icon-shoppingbag.png"></li></a>
+            <li><a href="#" class="shopping-bag"><img src="spellbound-images/shopping-cart-icon-original.svg" width="24" height="24"></li></a>
         </ul>
 
     </div>
@@ -36,13 +36,20 @@
 
     <main>
 
-        <div>
-        <section class="hero">
-            <div><img src="spellbound-images/cafephoto-interior2.png"></div>
-            <div><img src="spellbound-images/cafephoto-window.png"></div>
-            <div><img src="spellbound-images/cafephoto-interior1.png"></div>
-        </section>
+        <div class="carousel">
+            <div class="carousel__item"><img src="spellbound-images/cafephoto-interior2.png"></div>
+            <div class="carousel__item--visible"><img src="spellbound-images/cafephoto-window.png"></div>
+            <div class="carousel__item"><img src="spellbound-images/cafephoto-interior1.png"></div>
         </div>
+
+        <div class="carousel-actions">
+            <button id="carousel_button--prev" aria-label="previous-slide"><</button>
+            <button id="carousel_button--next" aria-label="next-slide">></button>
+        </div>
+
+        <script src="script.js">
+
+        </script>
     
         <section id="tea-collection">
             <div>
