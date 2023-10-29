@@ -1,22 +1,25 @@
-let slidePosition = 0
-const slides = document.getElementsByClassName('carousel-item');
-const totalSlides = slides.length;
-
-document.
-    getElementById('carousel-button--next')
-    .addEventListener("click", function() {
-        moveToNextSlide();
+document.querySelectorALL(".carousel").forEach(carousel => {
+const items = carousel.querySelectorALL(".carouselitem");
+const buttonsHtml = Array.from(items, () => {
+    return '<span class="carouselbutton"><span>';
     })
-document.
-    getElementById('carousel-button--prev')
-    .addEventListener("click", function() {
-        moveToPrevSlide(moveToNextSlide);
-    })
+});
 
-function moveToNextSlide() {
-    console.log('hello next')
-}
+carousel.insertAdjacentHTML("beforeend", '
+    <div class="carouselnav">
+        ${buttonsHtml.join("")}
+    </div>
+');
 
-function moveToPrevSlide() {
-    console.log('hello prev')
-}
+    const buttons = carousel.querySelectorAll(".carouselbutton");
+
+    buttons.forEach(button, i) => {
+        button.addEventListener("click", () => {
+            items.forEach(item => item.classList.remove("carouselitem-selected"));
+            buttons.forEach(button => button.classList.remove(carouselbutton-selected));
+
+            items[i].classList.add("carouselitem-selected");
+            button.classList.add("carouselbutton-selcted");
+        });
+    });
+});
