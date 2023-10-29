@@ -30,6 +30,20 @@ body {
     top:4px;
 }
 
+.navigation .navbar .logo a{
+    display: block;
+}
+
+.navigation .icons{
+    text-align: right;
+}
+
+@media screen and (min-width:1024){
+    .navigation .icons
+    {display: block !important;
+    height:auto !important;}
+}
+
 .navbar{
     width: 100%;
     height: 60px;
