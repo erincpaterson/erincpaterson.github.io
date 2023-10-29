@@ -7,7 +7,10 @@
     
     <title>Spellbound Cafe</title>
 
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link href="spellbound-stylesheet.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,14 +39,13 @@
 
     <main>
 
-        <div class="carousel">
-            <div class="carouselitem"><img src="spellbound-images/cafephoto-interior2.png"></div>
-            <div class="carouselitem carouselitem-selected"><img src="spellbound-images/cafephoto-window.png"></div>
-            <div class="carouselitem"><img src="spellbound-images/cafephoto-interior1.png"></div>
-        </div>
-        <script src="script.js"></script>
-    
-        <section id="tea-collection">
+        <section class="hero">
+            <div><img src="spellbound-images/cafephoto-interior2.png"></div>
+            <div><img src="spellbound-images/cafephoto-window.png"></div>
+            <div><img src="spellbound-images/cafephoto-interior1.png"></div>
+        </section>
+
+            <section class="tea-collection">
             <div>
                 <img src="spellbound-images/texture-rose.png">
                 <h4>Rose</h4>
@@ -124,5 +126,10 @@
         
         <p><small>&copy;2023 Spellbound Tea Company, All Rights Reserved</small></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

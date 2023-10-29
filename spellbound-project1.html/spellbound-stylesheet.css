@@ -4,7 +4,7 @@
 }
 
 body {
-    background: teal;
+    background: rgb(3, 46, 46);
     width: 100%;
     height:100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,43 +97,24 @@ body {
     background: #fff;
 }
 
-.carousel {
+.hero {
+    width:100vw;
+  }
+
+  .hero div {
+    padding:0px;
+  }
+
+  .tea-collection {
+    padding-top: 30px;
+    padding-inline: 110px;
+    padding-bottom: 80px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-}
-
-.carouselitem {
-    height: 600px;
-    background: grey;
-    padding: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 2em;
+    font-size: 16px;
     color: #fff;
-    display: none;
-}
-
-.carouselitem-selected{
-    display: block;
-}
-
-.carouselnav {
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-
-.carouselbutton {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.carouselbutton-selected {
-    background: rgba(255, 255, 255, 0.5);
-}
+    text-decoration: none;
+  }
