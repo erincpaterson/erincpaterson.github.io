@@ -1,252 +1,285 @@
 *{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 img{
-  width: 100%;
+width: 100%;
 }
 
 body {
-    background: rgb(3, 46, 46);
-    width: 100%;
-    height:100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
+  background: rgb(3, 46, 46);
+  width: 100%;
+  min-height:100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
 }
 
 a {
-  color: 041d2;
+color: 041d2;
 
 }
 
 .navigation{
-    background-color:goldenrod;
+  background-color:goldenrod;
 }
 
 .navigation > .container{
-    max-width: 90%;
-    margin: auto;
+  max-width: 90%;
+  margin: auto;
 }
 
 .navigation .navbar{
-    position: relative;
+  position: relative;
 }
 
 .navigation .navbar .logo{
-    position: absolute;
-    left: 50%;
-    top:4px;
+  left: 50%;
+  top:4px;
 }
 
 .navigation .navbar .logo a{
-    display: block;
+  display: block;
 }
 
 .navigation .icons{
-    text-align: right;
+  text-align: right;
 }
 
 @media screen and (min-width:1024){
-    .navigation .icons
-    {display: block !important;
-    height:auto !important;}
+  .navigation .icons
+  {display: block !important;
+  height:auto !important;}
 }
 
 .navbar{
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar .links{
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .navbar .icons{
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .navbar a{
-    position: relative;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .links li, .icons li{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .links a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
 .links li a:hover{
-    background-color: #ffffff87;
-    width: auto;
+  background-color: #ffffff87;
+  width: auto;
 }
 
 .links a:hover::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #fff;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
 }
 
 .hero {
-    width:100vw;
-  }
+  width:100vw;
+}
 
-  .hero div {
-    padding:0px;
-  }
+.hero div {
+  padding:0px;
+}
 
-  .tea-collection {
-    padding-top: 30px;
-    padding-bottom: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-  }
+.tea-collection {
+  display: flex;
+  width:70%;
+  margin:60px auto;
+  justify-content: space-between;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
 
-  .tea-collection div{
-    flex:1;
-  }
+.tea-collection div{
+  flex:1;
+}
 
-  .herb-img {
-    position:absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 25%;
-  }
+.herb-bg {
+background-image: url('spellbound-images/texture-rose.png');
+background-repeat:no-repeat;
+background-size:cover;
+height:400px;
+}
+.rose {
+background-image: url('spellbound-images/texture-rose.png');
+}
+.chamomile {
+background-image: url('spellbound-images/texture-chamomile.png');
+}
+.lavendar {
+background-image: url('spellbound-images/texture-lavender.png');
+}
+.jasmine {
+background-image: url('spellbound-images/texture-jasmine.png');
+}
+.tea-collection h4{
+color:white;
+z-index: 1;
+padding: 10px;
+background: rgba(151, 69, 84, 1);
+display:inline-block;
+margin:40px 20px 20px 40px;
+}
+.lavendar .collection-text, .lavendar h4{
+background: #6C7268;
+}
+.jasmine .collection-text, .jasmine h4{
+background: #B28449;
+}
+.chamomile .collection-text, .chamomile h4{
+background: #B28449;
+}
+.collection-text {
+color:white;
+z-index: 1;
+padding: 10px;
+background: rgba(151, 69, 84, 1);
+margin:20px 20px 20px 40px;
+display:flex;
+flex-direction:column;
+}
+.more {
+padding-top:50px;
+color:#041D22;
+display:inline-block;
+align-self: flex-end; 
+}
+.band {
+background-color:#6C2B4D;
+width:100%;
+height:330px;
+margin-bottom:-450px;
+margin-top:40px;
+}
+.footer{
+  margin-top: 100px;
+  padding: 50px;
+  padding-inline: 120px;
+  background: goldenrod;
+  color: #efefef;
+  display: flex;
+}
 
-  .tea-collection h4{
-    color:white;
-    z-index: 1;
-    padding: 10px;
-    background: rgba(151, 69, 84, 0.6);
-  }
-  
-  .collection-text {
-    color:white;
-    z-index: 1;
-    padding: 10px;
-    background: rgba(151, 69, 84, 0.6);
-  }
+.footer a, .boringstuff a, .boringstuff {
+  color: white
+}
 
-  .footer{
-    margin-top: 100px;
-    padding: 50px;
-    padding-inline: 120px;
-    background: goldenrod;
-    color: #efefef;
-    display: flex;
-  }
+.footer div{
+  text-align: center;
+}
 
-  footer a {
-    color: white
-  }
+.col-2{
+  flex-grow: 2;
+}
 
-  .footer div{
-    text-align: center;
-  }
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+}
 
-  .col-2{
-    flex-grow: 2;
-  }
+.footer img {
+  width: 32px;
+}
 
-  .footer div h3{
-    font-weight: 300;
-    margin-bottom: 30px;
-  }
+.col-1 a{
+  display: flex;
+  text-decoration: none;
+  color: #efefef;
+}
 
-  .footer img {
-    width: 32px;
-  }
+.col-1 a img{
+  margin-right: 5px;
+}
 
-  .col-1 a{
-    display: flex;
-    text-decoration: none;
-    color: #efefef;
-  }
+.termcon{
+  padding: 20px;
+  text-decoration: none;
+}
 
-  .col-1 a img{
-    margin-right: 5px;
-  }
+.copyr{
+  display: flex;
+  padding: 20px;
+  text-align: right;
+}
 
-  .termcon{
-    padding: 20px;
-    text-decoration: none;
-  }
+.boringstuff{
+  display: flex;
+  justify-content: space-between;
+}
 
-  .copyr{
-    display: flex;
-    padding: 20px;
-    text-align: right;
-  }
+.aboutbox {
+  background-image: url(spellbound-images/spellbound-pattern.png);
+}
 
-  .boringstuff{
-    display: flex;
-    justify-content: space-between;
-  }
+.about{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(90, 23, 37);
+}
 
-  .aboutbox {
-    background-image: url(spellbound-images/spellbound-pattern.png);
-  }
+.about-textstyle{
+  padding: 60px;
+}
 
-  .about{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(90, 23, 37);
-  }
+.about-textstyle h2{
+  color: white;
+  margin-bottom: 20px;
+}
 
-  .about-textstyle{
-    padding: 60px;
-  }
+.about-textstyle p{
+  color: white;
+  margin-bottom: 25px;
+}
 
-  .about-textstyle h2{
-    color: white;
-    margin-bottom: 20px;
-  }
+button{
+  background: orange;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px
+}
 
-  .about-textstyle p{
-    color: white;
-    margin-bottom: 25px;
-  }
-
-  button{
-    background: orange;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px
-  }
-
-  button:hover{
-    cursor: pointer;
-  }
-
+button:hover{
+  cursor: pointer;
+}
