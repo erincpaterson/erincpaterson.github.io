@@ -1,0 +1,107 @@
+/* FONT
+font-family: 'Montserrat', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+/* COLORS
+CSS HEX
+--rose-taupe: #8D646Aff;
+--garnet: #663231ff;
+--ebony: #5A5A4Eff;
+
+SCSS RGB 
+rose-taupe: rgba(141, 100, 106, 1);
+garnet: rgba(102, 50, 49, 1);
+ebony: rgba(90, 90, 78, 1);
+*/
+
+* {
+    box-sizing:border-box;
+}
+
+img {
+    width:100%;
+}
+
+body {
+    margin:0;
+    background-image: url('../img/cozybackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    }
+
+    .content {
+        padding:60px;
+        width:80%;
+        min-height:80vh;
+        margin: 80px auto;
+        background-color: rgba(238, 192, 178, .8);
+        border-radius: 20px;
+      }
+
+    a {
+        color: #663231ff;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration-color: white;
+        color: white;
+    }
+
+    p{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 16px;
+    }
+
+    h1, h2, h3 {
+        margin-top: 100;
+        font-family: 'Montserrat', sans-serif;
+        color: #663231ff;
+    }
+    
+    h1 {
+        color: #663231ff;
+        font-size: 36px;
+    }
+
+    h2 {
+        color: #663231ff;
+        font-size: 24px;
+    }
+
+    h3 {
+        color: #663231ff;
+        font-size: 20px;
+    }
+    .cards {
+        display:flex;
+      }
+      .card {
+        flex:33.3%;
+        background-color:rgb(238, 234, 220);
+        font-family: 'Pixelify Sans', sans-serif;
+        margin-right:20px;
+        padding:16px;
+        border-radius: 20px;
+      }
+      .card:last-child {
+        margin-right:0;
+      }
+      
+      .card img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      
+      .button {
+        display:inline-block;
+        background-color: rgb(64, 83, 35);
+        color: white;
+        text-decoration:none;
+        padding: 8px 12px;
+      }
+      .button:hover {
+        background-color: rgb(28, 28, 28);
+      }

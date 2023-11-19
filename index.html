@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erin's Website</title>
-    <link href="css/mainpagestyle.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 
+</head>
 <body>
-    <div> <!-- Start Wrapper div -->
-        <header>
-            <h1>Welcome - Erin Paterson's Website</h1>
+    <section class = "content">
+    <header>
+            <h1>
+                Welcome - Erin Paterson's Website
+            </h1>
             <div>
                 <p>Exploring HTML and CSS Through DES341: Interactive Media at PSU</p>
             </div>
@@ -21,104 +26,91 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#homework">Homework</a></li>
                 <li><a href="#classwork">Classwork</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
     </header>
     
-        <main>
+    <main>
         <section id="about">
-        <section class="introtext">
             <h2>About</h2>
+                <p>My name is Erin! I am a student at Portland State University studying Graphic Design. During Fall term 2023, I am taking Interactive Media. This class explores designing and creating websites like this one. In fact, this website is where I experiment and document my work for this class. Feel free to take a look around and track my progress.</p>
         </section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sapiente sed quia ullam nobis quis expedita earum sit voluptates itaque nihil quae obcaecati tenetur, reprehenderit illum quam perferendis non quas possimus, ut eaque, ea accusantium consectetur aut. Odit, ut exercitationem modi, repellat deserunt voluptas nesciunt, praesentium quis culpa debitis dolor!</p>
-                <a href="http://google.com" target="_black">Link to Google</a>
-        </section>
-
-        <img src="img/NekoEri.gif" alt="Animated Gif" title="A Gif Created by Me!">
 
         <aside id="interests">
             <h4>Things I Like</h4>
             <ul>
                 <li>Animation and Video Games</li>
-                <li class="favorite">Drawing and Journaling</li>
+                <li>Drawing and Journaling</li>
                 <li>Interior Design and Vintage Furniture</li>
-                <li class="favorite">Visiting Beautiful Local Shops and Resturants</li>
+                <li>Visiting Beautiful Local Shops and Resturants</li>
             </ul>
         </aside>
 
         <section id="projects">
-            <section class="introtext">
-                <h2>Projects</h2>
-            </section>
-                <article>
-                    <header><h3><a href="spellbound/index.html"><strong>Project1 - Spellbound Cafe</strong></a></h3></header>
-                    <p>By: Author Writes</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt tempore dolores. Eius error saepe repellat doloribus, illo blanditiis minus assumenda impedit architecto molestiae vel magni ipsam. Iure, reprehenderit consectetur.</p>
-                    <p><a href="#">Read More</a></p>
-                    <footer>Published October 10, 2023</footer>
-                </article>
-            </section>
+            <h2>Projects</h2>
+            <article class="cards">
 
-        <section id="homework">
-        <section class="introtext">
-            <h2>Homework</h2>
+                <div class="card">
+                    <img src="img/project1screen.png">
+                    <h3><a href="#"><strong>Project 1 - Growing Aromatic Kitchen Herbs</strong></a></h3>
+                    <p>For Project 1, I designed a five page website dedicated to four culinary herbs and how to grow them. This guide offers a simple introductory to Basil, Thyme, Rosemary, and Mint.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/project2screen.png">
+                    <h3><a href="spellbound/index.html"><strong>Project 2 - Spellbound Cafe</strong></a></h3>
+                    <p>For Project 2, I designed a website for "Spellbound Cafe". The concept, branding, and design for this cafe was created in an earlier class. I took the branding project one step further this term, by creating a website showcasing what a website for it would look like and how it would function.</p>
+                </div>
+
+            </article>
         </section>
 
-            <article>
-                <header><h3><a href="hw.html/hw1-narrative/index.html"><strong>Homework - Simple 5 Page Narrative</strong></a></h3></header>
-                <p>By: Author Writes</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt tempore dolores. Eius error saepe repellat doloribus, illo blanditiis minus assumenda impedit architecto molestiae vel magni ipsam. Iure, reprehenderit consectetur.</p>
-                <p><a href="#">Read More</a></p>
-                <footer>Published October 10, 2023</footer>
-            </article>
+        <section id="homework">
+            <h2>Homework</h2>
+            <article class="cards">
 
-            <article>
-                <header><h3><a href="hw.html/brain-dump-html/hwindex.html"><strong>Homework - Brain Dump HTML</strong></a></h3></header>
-                <h4><a href="hw.html/brain-dump-html/blog.html"><strong>Part 2 - Blog</strong></a></h4>
-                <p>By: Author Writes</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt tempore dolores. Eius error saepe repellat doloribus, illo blanditiis minus assumenda impedit architecto molestiae vel magni ipsam. Iure, reprehenderit consectetur.</p>
-                <p><a href="#">Read More</a></p>
-                <footer>Published October 10, 2023</footer>
-            </article>
+                <div class="card">
+                    <h3><a href="hw.html/hw1-narrative/index.html"><strong>Homework - Simple 5 Page Narrative</strong></a></h3>
+                    <p>A simple, five page, narrative site that moves chronologically through the steps of creating a poster design for the movie "Death Proof".</p>
+                </div>
 
-            <article>
-                <header><h3><a href="hw.html/brain-dump-css/hw2index.html"><strong>Homework - Brain Dump CSS</strong></a></h3></header>
-                <p>By: Author Writes</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint minima voluptate ipsa. Culpa, aut officia sequi dolorum ullam nesciunt, fugit est ipsum accusamus, hic ut quisquam quod incidunt eius rem!</p>
-                <p><a href="#">Read More</a></p>
-                <footer>Published October 10, 2023</footer>
+                <div class="card">
+                    <h3><a href="hw.html/brain-dump-html/hwindex.html"><strong>Homework - Brain Dump HTML</strong></a></h3>
+                    <h4><a href="hw.html/brain-dump-html/blog.html"><strong>Part 2 - Blog</strong></a></h4>
+                    <p>An exploration of HTML using a video tutorial on YouTube by Traversy Media</p>
+                </div>
+
+                <div class="card">
+                    <h3><a href="hw.html/brain-dump-css/hw2index.html"><strong>Homework - Brain Dump CSS</strong></a></h3>
+                    <p>An exploration of CSS using a video tutorial on YouTube by Traversy Media</p>
+                </div>
+
             </article>
         </section>
 
         <section id="classwork">
-        <section class="introtext">
             <h2>Classwork</h2>
-        </section>
-            <article>
-                <header><h3><a href="clock-main/index.html"><strong>Clock Animation</strong></a></h3></header>
-                <p>By: Author Writes</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt tempore dolores. Eius error saepe repellat doloribus, illo blanditiis minus assumenda impedit architecto molestiae vel magni ipsam. Iure, reprehenderit consectetur.</p>
-                <p><a href="#">Read More</a></p>
-                <footer>Published October 10, 2023</footer>
+            <article class="cards">
+
+                <div class="card">
+                    <h3><a href="clock-main/index.html"><strong>Clock Animation</strong></a></h3>
+                    <p>In class assignment on how to create a working clock using HTML, CSS, and Javascript.</p>
+                </div>
+            
             </article>
         </section>
-
         
-        <section id="contact">
-        <section class="introtext">
-            <h2>Contact</h2>
-        </section>
-                <p>You can reach me at <a href="mailto:samplemail@gmail.com?subject=Website%20Contact%20Prompt">samplemail@gmail.com</a></p>
-        </section>
-        </main>
+    </main>
+
     <br>
     <hr>
     <footer>
         <a href="#">Go Back to the Top of This Page</a>
         <p><small>&copy;2023 Copyright, Corp</small></p>
     </footer>
-    </div> <!-- End Wrapper div -->
+    </div>
+
+</section>
 </body>
 </html>
