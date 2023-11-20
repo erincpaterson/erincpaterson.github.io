@@ -1,7 +1,26 @@
+/* FONT
+font-family: 'Lusitana', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* COLORS
+CSS HEX
+--black-olive: #25332dff;
+--feldgrau: #5b6964ff;
+--copper: #b28449ff;
+--violet-jtc: #6c2b4dff;
+--white: #ffffffff;
+
+SCSS RGB 
+black-olive: rgba(37, 51, 45, 1);
+feldgrau: rgba(91, 105, 100, 1);
+copper: rgba(178, 132, 73, 1);
+violet-jtc: rgba(108, 43, 77, 1);
+white: rgba(255, 255, 255, 1);
+*/
+
 *{
   box-sizing: border-box;
-  margin:0;
-  padding:0;
 }
 
 img{
@@ -9,13 +28,16 @@ width: 100%;
 }
 
 body {
-  background: rgb(3, 46, 46);
-  width: 100%;
-  min-height:100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
+  margin:0;
+  background: #25332dff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+}
 
+.contentslick {
+  position: flex;
+  width: 90%;
+  scale: 95%;
 }
 
 a {
@@ -23,56 +45,31 @@ color: 041d2;
 
 }
 
-.navigation{
-  background-color:goldenrod;
-}
-
-.navigation > .container{
-  max-width: 90%;
-  margin: auto;
-}
-
-.navigation .navbar{
-  position: relative;
-}
-
-.navigation .navbar .logo{
-  left: 50%;
-  top:4px;
-}
-
-.navigation .navbar .logo a{
-  display: block;
-}
-
-.navigation .icons{
-  text-align: right;
-}
-
-@media screen and (min-width:1024){
-  .navigation .icons
-  {display: block !important;
-  height:auto !important;}
-}
-
 .navbar{
   width: 100%;
   height: 60px;
   max-width: 1200px;
+  background-color: #B28449;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.navbar .logo{
+  text-align: center;
+  left: 100%;
+  top: 4px;
+}
+
+.navigation .navicons{
+  text-align: right;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .navbar .links{
   display: flex;
   gap: 2rem;
-}
-
-.navbar .icons{
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 .navbar a{
@@ -110,10 +107,6 @@ color: 041d2;
 
 .hero {
   width:100vw;
-}
-
-.hero div {
-  padding:0px;
 }
 
 .tea-collection {
