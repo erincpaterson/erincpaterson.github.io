@@ -49,9 +49,12 @@ color: 041d2;
   width: 100%;
   height: 60px;
   max-width: 1200px;
-  background-color: #B28449;
   display: flex;
   justify-content: space-between;
+}
+
+.navigation {
+  background-color: #B28449;
 }
 
 .navbar .logo{

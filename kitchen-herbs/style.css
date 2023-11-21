@@ -1,3 +1,9 @@
+/* FONT
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'IM Fell Great Primer SC', serif;
+font-family: 'Lancelot', serif; 
+*/
+
 * {
     box-sizing: border-box;
   }
@@ -7,7 +13,16 @@
   img {
     width:100%;
   }
-  
+
+  h1{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 62px;
+  }
+
+  h2{
+    font-family: 'Lancelot', serif; 
+    font-size: 32px;
+  }
   .home-menu {
     display:flex;
     height:100vh;
@@ -21,36 +36,38 @@
     background-image: url('http://placekitten.com/360/1024');
   }
   .home-menu .col-1 {
-    background-image: url('http://placekitten.com/361/1024');
+    background-image: url('../kitchen-herbs/img/basilresize.png');
   }
   .home-menu .col-2 {
-    background-image: url('http://placekitten.com/362/1024');
+    background-image: url('../kitchen-herbs/img/thymeresize.png');
   }
   .home-menu .col-3 {
-    background-image: url('http://placekitten.com/363/1024');
+    background-image: url('..//kitchen-herbs/img/rosemaryresize.png');
   }
   .home-menu .col-4 {
-    background-image: url('http://placekitten.com/364/1024');
+    background-image: url('../kitchen-herbs/img/mintresize.png');
   }
   .green-home-box {
     position:absolute;
-    top:90px;
+    top:100px;
     left:0;
     right:0;
     background-color: #203D13;
-    padding: 60px 0;
-    width:80%;
+    padding: 20px 0;
+    width:95%;
     margin:auto;
     text-align:center;
+    line-height: 0px;
     color: white;
   }
+
   .border-green {
     position:absolute;
     top:30px;
     left:0;
     right:0;
     width:95%;
-    height: 95vh;
+    height: 90vh;
     margin:auto;
     border: 8px solid #203D13;
   }
@@ -59,9 +76,9 @@
     text-align:center;
     text-decoration:none;
     color: black;
-    background-color: rgba(255,255,255,.6);
-    padding: 12px 0;
-    width:20%;
+    background-color: rgba(255,255,255,.8);
+    padding: 20px 0;
+    width:13%;
     margin:auto;
   }
   .button-set {
@@ -75,7 +92,7 @@
     margin:auto;
   }
   .home-page .button-set {
-    bottom:90px;
+    bottom:110px;
     left:0;
     right:0;
   }
