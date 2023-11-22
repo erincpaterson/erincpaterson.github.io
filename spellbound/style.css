@@ -1,5 +1,6 @@
 /* FONT
 font-family: 'Lusitana', serif;
+font-family: 'Meow Script', cursive;
 font-family: 'Montserrat', sans-serif;
 */
 
@@ -36,8 +37,12 @@ body {
 
 .contentslick {
   position: flex;
-  width: 80%;
+  width: 90%;
   scale: 95%;
+}
+
+.slickimg{
+  padding: 0px 15px;
 }
 
 a {
@@ -64,8 +69,8 @@ color: 041d2;
   position: relative;
   font-size: 16px;
   color: #fff;
-  font-weight: 500;
-  text-decoration: none;
+  font-family: 'Lusitana', serif;
+  text-decoration: underline;
 }
 
 .navlinks li{
@@ -102,64 +107,48 @@ color: 041d2;
   width:100vw;
 }
 
-.tea-collection {
-  display: flex;
-  width:70%;
-  margin:60px auto;
-  justify-content: space-between;
-  position: relative;
-  color: #fff;
-  text-decoration: none;
+.tea-set {
+  display:flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px 60px 60px;
 }
 
-.tea-collection div{
-  flex:1;
+.img-container {
+width: 295px;
+height: 265px;
+position: relative;
+margin: 200px auto;
 }
-
-.herb-bg {
-background-image: url('spellbound-images/texture-rose.png');
-background-repeat:no-repeat;
-background-size:cover;
-height:400px;
+.container {
+  width: 295px;
+  height: 265px;
 }
-.rose {
-background-image: url('spellbound-images/texture-rose.png');
+.teabtn {
+  border-radius: 20px;
 }
-.chamomile {
-background-image: url('spellbound-images/texture-chamomile.png');
-}
-.lavendar {
-background-image: url('spellbound-images/texture-lavender.png');
-}
-.jasmine {
-background-image: url('spellbound-images/texture-jasmine.png');
-}
-.tea-collection h4{
+.img-text {
+width: 295px;
 color:white;
 z-index: 1;
 padding: 10px;
-background: rgba(151, 69, 84, 1);
 display:inline-block;
-margin:40px 20px 20px 40px;
+margin: 130px 50px 50px 0px;
+padding: 25px 35px;
+font-family: 'Lusitana', serif;
+position: absolute;
 }
-.lavendar .collection-text, .lavendar h4{
-background: #6C7268;
-}
-.jasmine .collection-text, .jasmine h4{
-background: #B28449;
-}
-.chamomile .collection-text, .chamomile h4{
-background: #B28449;
-}
-.collection-text {
-color:white;
-z-index: 1;
+.boxoverlay {
+width: 295px;
+height: 135px;
+border-radius: 0px 0px 20px 20px;
 padding: 10px;
-background: rgba(151, 69, 84, 1);
-margin:20px 20px 20px 40px;
-display:flex;
-flex-direction:column;
+background: rgba(178, 132, 73, .85);
+display:inline-block;
+margin: 130px 50px 50px 0px;
+position: absolute;
 }
+
 .more {
 padding-top:50px;
 color:#041D22;
