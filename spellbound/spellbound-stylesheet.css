@@ -37,7 +37,7 @@ body {
 .contentslick {
   position: flex;
   width: 80%;
-  scale: 90%;
+  scale: 95%;
 }
 
 a {
@@ -48,26 +48,12 @@ color: 041d2;
 .navbar{
   width: 100%;
   height: 60px;
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
-}
-
-.navigation {
-  background-color: #B28449;
-}
-
-.navbar .logo{
+  background-color: #b28449ff;
   text-align: center;
   left: 100%;
-  top: 4px;
-}
-
-.navigation .navicons{
-  text-align: right;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 .navbar .links{
