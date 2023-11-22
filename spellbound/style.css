@@ -35,7 +35,7 @@ body {
   font-size: 16px;
 }
 
-.contentslick {
+#contentslick {
   position: flex;
   width: 90%;
   scale: 95%;
@@ -50,7 +50,7 @@ color: 041d2;
 
 }
 
-.navbar{
+#navbar{
   width: 100%;
   height: 60px;
   display: flex;
@@ -60,12 +60,12 @@ color: 041d2;
   left: 100%;
 }
 
-.navbar .navlinks{
+#navbar .navlinks{
   display: flex;
   gap: 2rem;
 }
 
-.navbar a{
+#navbar a{
   position: relative;
   font-size: 16px;
   color: #fff;
@@ -95,7 +95,7 @@ color: 041d2;
   justify-content: center;
 }
 
-.navbar .logo{
+#navbar .logo{
   display: flex;
   position: relative;
   align-items: center center;
