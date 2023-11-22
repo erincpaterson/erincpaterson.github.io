@@ -121,11 +121,23 @@ position: relative;
 margin: 200px auto;
 }
 .container {
-  width: 295px;
-  height: 265px;
+width: 295px;
+height: 265px;
 }
 .teabtn {
-  border-radius: 20px;
+border-radius: 20px;
+}
+.img-title {
+width: 295px;
+color:white;
+z-index: 1;
+padding: 10px;
+display:inline-block;
+margin: 45px -60px;
+padding: 25px 35px;
+font-family: 'Meow Script', cursive;
+font-size: 76px;
+position: absolute;
 }
 .img-text {
 width: 295px;
