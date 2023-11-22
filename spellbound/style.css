@@ -56,7 +56,7 @@ color: 041d2;
   left: 100%;
 }
 
-.navbar .links{
+.navbar .navlinks{
   display: flex;
   gap: 2rem;
 }
@@ -69,29 +69,32 @@ color: 041d2;
   text-decoration: none;
 }
 
-.links li, .icons li{
+.navlinks li{
   list-style-type: none;
 }
 
-.links a{
+.navlinks a{
   text-decoration: none;
   color: white;
   font-size: 16px;
 }
 
-.links li a:hover{
+.navlinks li a:hover{
   background-color: #ffffff87;
   width: auto;
 }
 
-.links a:hover::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #fff;
+.navicons{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.navbar .logo{
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 6px;
 }
 
 .hero {
