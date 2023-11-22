@@ -13,6 +13,31 @@ font-family: 'Lancelot', serif;
   img {
     width:100%;
   }
+  .basil-page {
+    margin:0;
+    background-image: url('../kitchen-herbs/img/basilfill.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .thyme-page {
+    margin:0;
+    background-image: url('../kitchen-herbs/img/thymefill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rosemary-page {
+    margin:0;
+    background-image: url('../kitchen-herbs/img/rosemaryfill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mint-page {
+    margin:0;
+    background-image: url('../kitchen-herbs/img/mintfill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
   h1{
     font-family: 'IM Fell Great Primer SC', serif;
@@ -75,11 +100,39 @@ font-family: 'Lancelot', serif;
     display:block;
     text-align:center;
     text-decoration:none;
-    color: black;
+    border: 2.5px solid #203D13;
+    color: #203D13;
     background-color: rgba(255,255,255,.8);
     padding: 20px 0;
     width:13%;
     margin:auto;
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 26px;
+  }
+  .button:hover {
+    background-color: rgb(134,154,125,.8);
+    border: 2.5px solid #203D13;
+    color: white;
+  }
+  .button-selected {
+    display:flex;
+    justify-content: space-around;
+    bottom:90px;
+    left:0;
+    right:0;
+    width:100%;
+    margin:auto;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background-color: rgb(134,154,125,.8);
+    border: 2.5px solid #203D13;
+    color: white;
+    padding: 20px 0;
+    width:13%;
+    margin:auto;
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 26px;
   }
   .button-set {
     display:flex;
@@ -97,6 +150,21 @@ font-family: 'Lancelot', serif;
     right:0;
   }
   .basil-page .button-set {
+    bottom:60px;
+    left:0;
+    right:0;
+  }
+  .thyme-page .button-set {
+    bottom:60px;
+    left:0;
+    right:0;
+  }
+  .rosemary-page .button-set {
+    bottom:60px;
+    left:0;
+    right:0;
+  }
+  .mint-page .button-set {
     bottom:60px;
     left:0;
     right:0;
