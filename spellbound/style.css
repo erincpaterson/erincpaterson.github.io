@@ -87,13 +87,15 @@ color: 041d2;
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar .logo{
   display: flex;
   position: relative;
-  align-items: center;
+  align-items: center center;
   top: 6px;
+  justify-content: center;
 }
 
 .hero {
