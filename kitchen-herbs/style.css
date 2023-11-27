@@ -118,7 +118,7 @@ font-family: 'Lancelot', serif;
   }
   .minthomebutton {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     display: flex;
     margin-right: 80%;
@@ -127,6 +127,7 @@ font-family: 'Lancelot', serif;
 
   .button {
     display:block;
+    z-index:1;
     text-align:center;
     text-decoration:none;
     border: 2.5px solid #203D13;
@@ -165,8 +166,9 @@ font-family: 'Lancelot', serif;
   }
   .button-set {
     display:flex;
+    position: absolute;
+    z-index:1;
     justify-content:space-around;
-    position:absolute;
     bottom:90px;
     left:0;
     right:0;
@@ -199,6 +201,16 @@ font-family: 'Lancelot', serif;
     right:0;
   }
 
+.basilsketch {
+  position:absolute;
+  z-index:1;
+  top:1%;
+  left:-380px;
+  right: 0px;
+  height:580px;
+  margin:0;
+  rotate: -50deg;
+  }
 .basilimgbox {
   position:absolute;
   z-index:1;
@@ -248,9 +260,18 @@ font-family: 'Lancelot', serif;
     font-family: 'IM Fell Great Primer SC', serif;
   }
 
-.thymeimgbox {
+.thymesketch {
   position:absolute;
   z-index:1;
+  top:1%;
+  left:-380px;
+  right: 0px;
+  height:580px;
+  margin:0;
+  rotate: -50deg;
+  }
+.thymeimgbox {
+  position:absolute;
   top:8%;
   left:150px;
   right: 0px;
@@ -297,9 +318,18 @@ font-family: 'Lancelot', serif;
     font-family: 'IM Fell Great Primer SC', serif;
     }
 
-.rosemaryimgbox {
+.rosemarysketch {
   position:absolute;
   z-index:1;
+  top:7%;
+  left:390px;
+  right: 0px;
+  height:520px;
+  margin:0;
+  rotate: 70deg;
+  }
+.rosemaryimgbox {
+  position:absolute;
   top:15%;
   left:892px;
   right: 0px;
@@ -344,11 +374,18 @@ font-family: 'Lancelot', serif;
     font-family: 'IM Fell Great Primer SC', serif;
     }
 
-
+.mintsketch {
+  position:absolute;
+  z-index:3;
+  top:14%;
+  left:390px;
+  right:none;
+  height:450px;
+  rotate: -5deg;
+  }
 .mintimgbox {
   position:absolute;
-  z-index:1;
-  top:10%;
+  top:13%;
   left:920px;
   right: 0px;
   background-color: rgb(134, 154, 125, .85);
@@ -362,7 +399,7 @@ font-family: 'Lancelot', serif;
 }
   .mintcareguidebox {
     position:absolute;
-    top:10%;
+    top:13%;
     left:7%;
     right:0;
     background-color: #593345;
@@ -376,7 +413,7 @@ font-family: 'Lancelot', serif;
     }  
   .mintcareguidetext {
     position:absolute;
-    top:20%;
+    top:23%;
     left:10%;
     right:0;
     background-color:none;
