@@ -113,13 +113,12 @@ font-family: 'Lancelot', serif;
   .rosemaryhomebutton {
     position: absolute;
     display: flex;
-    margin-left: 4%;
-    padding: 50px 30px;
+    margin-right: 80%;
+    padding: 50px 85px;
   }
   .minthomebutton {
     position: absolute;
     z-index: 2;
-    position: absolute;
     display: flex;
     margin-right: 80%;
     padding: 40px 55px;
