@@ -98,6 +98,33 @@ font-family: 'Lancelot', serif;
     border: 8px solid #203D13;
   }
   
+  .basilhomebutton {
+    position: absolute;
+    display: flex;
+    margin-left: 82%;
+    padding: 50px;
+  }
+  .thymehomebutton {
+    position: absolute;
+    display: flex;
+    margin-left: 86%;
+    padding: 50px;
+  }
+  .rosemaryhomebutton {
+    position: absolute;
+    display: flex;
+    margin-left: 4%;
+    padding: 30px;
+  }
+  .minthomebutton {
+    position: absolute;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    margin-right: 80%;
+    padding: 40px;
+  }
+
   .button {
     display:block;
     text-align:center;
@@ -138,7 +165,7 @@ font-family: 'Lancelot', serif;
   }
   .button-set {
     display:flex;
-    justify-content: space-around;
+    justify-content:space-around;
     position:absolute;
     bottom:90px;
     left:0;
@@ -171,3 +198,196 @@ font-family: 'Lancelot', serif;
     left:0;
     right:0;
   }
+
+.basilimgbox {
+  position:absolute;
+  z-index:1;
+  top:16%;
+  left:720px;
+  right: 0px;
+  background-color: rgb(134, 154, 125, .85);
+  padding:330px 0px 0px 20px;
+  width:500px;
+  height:none;
+  margin:0;
+  text-align:left;
+  line-height: 5px;
+  color: white;
+}
+  .basilcareguidebox {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #593345;
+    padding:50px;
+    width:36%;
+    height:100%;
+    margin:0;
+    text-align:center;
+    line-height: 0px;
+    color: white;
+  }
+  .basilcareguidetext {
+    position:absolute;
+    top:14%;
+    left:0;
+    right:0;
+    background-color: none;
+    padding:55px;
+    padding-left: 60px;
+    width:33.3%;
+    height:100%;
+    margin:0;
+    text-align:left;
+    font-size: 24px;
+    font-family: 'Lancelot', serif; 
+    color: white;
+  }
+  .basilcareguidetext .h3 {
+    font-family: 'IM Fell Great Primer SC', serif;
+  }
+
+.thymeimgbox {
+  position:absolute;
+  z-index:1;
+  top:8%;
+  left:150px;
+  right: 0px;
+  background-color: rgb(134, 154, 125, .85);
+  padding:380px 0px 0px 20px;
+  width:400px;
+  height:none;
+  margin:0;
+  text-align:left;
+  line-height: 5px;
+  color: white;
+}
+  .thymecareguidebox {
+    position:absolute;
+    top:0;
+    left:50%;
+    right:0;
+    background-color: #593345;
+    padding:50px;
+    width:36%;
+    height:100%;
+    margin:0;
+    text-align:center;
+    line-height: 0px;
+    color: white;
+  }  
+  .thymecareguidetext {
+    position:absolute;
+    top:14%;
+    left:51%;
+    right:0;
+    background-color: none;
+    padding:61px;
+    padding-left: 60px;
+    width:33.3%;
+    height:100%;
+    margin:0;
+    text-align:left;
+    font-size: 24px;
+    font-family: 'Lancelot', serif; 
+    color: white;
+  }
+  .thymecareguidetext .h3 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    }
+
+.rosemaryimgbox {
+  position:absolute;
+  z-index:1;
+  top:15%;
+  left:892px;
+  right: 0px;
+  background-color: rgb(134, 154, 125, .85);
+  padding:0px 0px 0px 20px;
+  width:400px;
+  height:450px;
+  margin:0;
+  text-align:left;
+  line-height: 5px;
+  color: white;
+}
+  .rosemarycareguidebox {
+    position:absolute;
+    top:15%;
+    left:6%;
+    right:0;
+    background-color: #593345;
+    padding:10px;
+    width:56%;
+    height:450px;
+    margin:0;
+    text-align:center;
+    line-height: 0px;
+    color: white;
+    }  
+  .rosemarycareguidetext {
+    position:absolute;
+    top:22%;
+    left:7%;
+    right:0;
+    background-color:none;
+    padding:61px;
+    width:54%;
+    margin:0;
+    text-align:left;
+    font-size: 24px;
+    font-family: 'Lancelot', serif; 
+    color: white;
+    }
+  .rosemarycareguidetext .h3 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    }
+
+
+.mintimgbox {
+  position:absolute;
+  z-index:1;
+  top:10%;
+  left:920px;
+  right: 0px;
+  background-color: rgb(134, 154, 125, .85);
+  padding:0px 20px 0px 20px;
+  width:400px;
+  height:500px;
+  margin:0;
+  text-align:right;
+  line-height: 5px;
+  color: white;
+}
+  .mintcareguidebox {
+    position:absolute;
+    top:10%;
+    left:7%;
+    right:0;
+    background-color: #593345;
+    padding:30px;
+    width:52%;
+    height:500px;
+    margin:0;
+    text-align:center;
+    line-height: 0px;
+    color: white;
+    }  
+  .mintcareguidetext {
+    position:absolute;
+    top:20%;
+    left:10%;
+    right:0;
+    background-color:none;
+    padding:61px;
+    width:50%;
+    margin:0;
+    text-align:left;
+    font-size: 24px;
+    font-family: 'Lancelot', serif; 
+    color: white;
+    }
+  .mintcareguidetext .h3 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    }
