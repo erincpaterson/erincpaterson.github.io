@@ -101,6 +101,7 @@ font-family: 'Lancelot', serif;
   .basilhomebutton {
     position: absolute;
     display: flex;
+    z-index: 2;
     margin-left: 82%;
     padding: 50px;
   }
