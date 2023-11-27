@@ -101,9 +101,9 @@ font-family: 'Lancelot', serif;
   .basilhomebutton {
     position: absolute;
     display: flex;
-    z-index: 2;
-    margin-left: 82%;
-    padding: 50px;
+    z-index: 1;
+    margin-left: 85%;
+    padding: 40px;
   }
   .thymehomebutton {
     position: absolute;
@@ -204,16 +204,16 @@ font-family: 'Lancelot', serif;
 
 .basilsketch {
   position:absolute;
-  z-index:1;
-  top:1%;
+  top:8%;
   left:280px;
   right: 0px;
-  height:580px;
+  height:520px;
   margin:0;
   rotate:-10deg;
   }
 .basilimgbox {
   position:absolute;
+  z-index: -1;
   top:16%;
   left:720px;
   right: 0px;
