@@ -228,14 +228,10 @@ font-family: 'Lancelot', serif;
 }
   .basilcareguidebox {
     position:absolute;
-    top:0;
-    left:0;
-    right:0;
     background-color: #593345;
     padding:50px;
     width:36%;
-    height:100%;
-    margin:0;
+    height:100vh;
     text-align:center;
     line-height: 0px;
     color: white;
@@ -243,13 +239,10 @@ font-family: 'Lancelot', serif;
   .basilcareguidetext {
     position:absolute;
     top:14%;
-    left:0;
-    right:0;
     background-color: none;
     padding:55px;
     padding-left: 60px;
     width:33.3%;
-    height:100%;
     margin:0;
     text-align:left;
     font-size: 24px;
@@ -262,53 +255,44 @@ font-family: 'Lancelot', serif;
 
 .thymesketch {
   position:absolute;
-  z-index:1;
-  top:1%;
   left:-380px;
-  right: 0px;
   height:580px;
-  margin:0;
   rotate: -50deg;
+  margin: none;
   }
-.thymeimgbox {
-  position:absolute;
-  top:8%;
-  left:150px;
-  right: 0px;
-  background-color: rgb(134, 154, 125, .85);
-  padding:380px 0px 0px 20px;
-  width:400px;
-  height:none;
-  margin:0;
-  text-align:left;
-  line-height: 5px;
-  color: white;
-}
   .thymecareguidebox {
     position:absolute;
-    top:0;
     left:50%;
-    right:0;
     background-color: #593345;
     padding:50px;
     width:36%;
-    height:100%;
-    margin:0;
+    height:100vh;
+    margin: none;
     text-align:center;
     line-height: 0px;
     color: white;
   }  
+  .thymeimgbox {
+    position:absolute;
+    z-index: -1;
+    top:8%;
+    left:150px;
+    margin: none;
+    background-color: rgb(134, 154, 125, .85);
+    padding:380px 0px 0px 20px;
+    width:400px;
+    text-align:left;
+    line-height: 5px;
+    color: white;
+  }
   .thymecareguidetext {
     position:absolute;
-    top:14%;
+    top:10%;
     left:51%;
-    right:0;
     background-color: none;
     padding:61px;
     padding-left: 60px;
     width:33.3%;
-    height:100%;
-    margin:0;
     text-align:left;
     font-size: 24px;
     font-family: 'Lancelot', serif; 
