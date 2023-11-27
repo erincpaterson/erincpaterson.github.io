@@ -112,9 +112,10 @@ font-family: 'Lancelot', serif;
   }
   .rosemaryhomebutton {
     position: absolute;
+    z-index: 2;
     display: flex;
     margin-right: 80%;
-    padding: 50px 85px;
+    padding: 20px 85px;
   }
   .minthomebutton {
     position: absolute;
