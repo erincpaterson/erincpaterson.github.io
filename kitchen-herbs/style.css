@@ -114,7 +114,7 @@ font-family: 'Lancelot', serif;
     position: absolute;
     display: flex;
     margin-left: 4%;
-    padding: 30px;
+    padding: 50px 30px;
   }
   .minthomebutton {
     position: absolute;
@@ -122,7 +122,7 @@ font-family: 'Lancelot', serif;
     position: absolute;
     display: flex;
     margin-right: 80%;
-    padding: 40px;
+    padding: 40px 55px;
   }
 
   .button {
@@ -205,15 +205,14 @@ font-family: 'Lancelot', serif;
   position:absolute;
   z-index:1;
   top:1%;
-  left:-380px;
+  left:280px;
   right: 0px;
   height:580px;
   margin:0;
-  rotate: -50deg;
+  rotate:-10deg;
   }
 .basilimgbox {
   position:absolute;
-  z-index:1;
   top:16%;
   left:720px;
   right: 0px;
@@ -376,16 +375,16 @@ font-family: 'Lancelot', serif;
 
 .mintsketch {
   position:absolute;
-  z-index:3;
-  top:14%;
-  left:390px;
+  z-index:1;
+  top:6%;
+  left:350px;
   right:none;
-  height:450px;
-  rotate: -5deg;
+  height:600px;
+  rotate:-25deg;
   }
 .mintimgbox {
   position:absolute;
-  top:13%;
+  top:10%;
   left:920px;
   right: 0px;
   background-color: rgb(134, 154, 125, .85);
@@ -399,7 +398,7 @@ font-family: 'Lancelot', serif;
 }
   .mintcareguidebox {
     position:absolute;
-    top:13%;
+    top:10%;
     left:7%;
     right:0;
     background-color: #593345;
@@ -413,7 +412,7 @@ font-family: 'Lancelot', serif;
     }  
   .mintcareguidetext {
     position:absolute;
-    top:23%;
+    top:20%;
     left:10%;
     right:0;
     background-color:none;
