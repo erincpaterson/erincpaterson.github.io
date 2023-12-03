@@ -40,37 +40,34 @@ body {
   width: 90%;
   scale: 95%;
 }
-
 .slickimg{
   padding: 0px 15px;
 }
 
 .navbar{
+  display: flex;
   width: 100%;
   height: 65px;
-  display: flex;
   background-color: #b28449ff;
+  text-align: center;
   align-items: center;
-  justify-content: space-between;
   }
 
 .navlinks{
-  display: flex;
   gap: 2rem;
-  font-size: 20px;
-  text-transform: uppercase;
   color: #fff;
+  font-size: 16px;
   font-family: 'Lusitana', serif;
   text-decoration: none;
   list-style-type: none;
   display: flex;
   align-items: center;
+  text-align: left;
 }
 
 .navlinks a{
   text-decoration: none;
   color: white;
-  font-size: 16px;
 }
 
 .navlinks li a:hover{
@@ -78,9 +75,19 @@ body {
   width: auto;
 }
 
+.logo {
+display: flex;
+padding-inline: 25%;
+align-items: center;
+margin-left: 160px;
+margin-right: 100px;
+}
+
 .navicons{
   display: flex;
   align-items: center;
+  padding-inline: 10%;
+  padding-left: 35%;
 }
 
 
@@ -210,30 +217,8 @@ p {
   color: #efefef;
   display: flex;
 }
-
-.footer a, .boringstuff a, .boringstuff {
-  color: white
-}
-
 .footer div{
   text-align: center;
-}
-
-.col-2{
-  flex-grow: 2;
-}
-
-.footerp {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer div h3{
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-.footer img {
-  width: 20px;
 }
 h3 {
   font-family: 'Lusitana', serif;
@@ -241,27 +226,36 @@ h3 {
   text-transform: uppercase;
   font-size: 20px;
 }
+.footerp {
+  font-family: 'Montserrat', sans-serif;
+}
+.footer img {
+  width: 20px;
+}
 .col-1 a{
   display: flex;
   text-decoration: none;
   color: #efefef;
 }
-
 .col-1 a img{
   margin-right: 10px;
 }
+.col-2{
+  flex-grow: 2;
+}
 
+.footer a, .boringstuff a, .boringstuff {
+  color: white
+}
 .termcon{
   padding: 20px;
   text-decoration: none;
 }
-
 .copyr{
   display: flex;
   padding: 20px;
   text-align: right;
 }
-
 .boringstuff{
   display: flex;
   justify-content: space-between;
