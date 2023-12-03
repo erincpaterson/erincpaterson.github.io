@@ -81,7 +81,6 @@ body {
 .navicons{
   display: flex;
   align-items: center;
-  padding: 20px 0px;
 }
 
 .hero {
