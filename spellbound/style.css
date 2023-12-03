@@ -168,7 +168,7 @@ p {
     width:90%;
     height:700px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 120px;
     align-items: center;
 }
 .greencontainter .abouttextcontainer {
@@ -205,10 +205,8 @@ p {
 }
 
 .footer{
-  margin-top: 100px;
   padding: 50px;
-  padding-inline: 120px;
-  background: goldenrod;
+  padding-inline: 150px;
   color: #efefef;
   display: flex;
 }
@@ -225,13 +223,17 @@ p {
   flex-grow: 2;
 }
 
+.footerp {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .footer div h3{
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 .footer img {
-  width: 32px;
+  width: 20px;
 }
 
 .col-1 a{
@@ -241,7 +243,7 @@ p {
 }
 
 .col-1 a img{
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .termcon{
@@ -277,4 +279,7 @@ button:hover{
 .shopbutton {
   margin-top: 20px;
   margin-left: 75%;
+}
+.submitbutton {
+  padding: 5px 15px;
 }
