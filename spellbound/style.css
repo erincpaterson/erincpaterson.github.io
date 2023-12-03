@@ -51,8 +51,7 @@ body {
   display: flex;
   background-color: #b28449ff;
   align-items: center;
-  justify-content: center;
-  padding-inline: 100px;
+  justify-content: space-between;
   }
 
 .navlinks{
@@ -65,7 +64,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  padding-right: 200px;
+  align-items: center;
 }
 
 .navlinks a{
@@ -82,8 +81,6 @@ body {
 .navicons{
   display: flex;
   align-items: center;
-  padding-right: 100px;
-  padding-left: 100px;
 }
 
 
