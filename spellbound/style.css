@@ -51,7 +51,8 @@ body {
   display: flex;
   background-color: #b28449ff;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding-inline: 100px;
   }
 
 .navlinks{
@@ -61,10 +62,10 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-family: 'Lusitana', serif;
-  text-decoration: under;
+  text-decoration: none;
   list-style-type: none;
   display: flex;
-  align-items: center;
+  padding-right: 200px;
 }
 
 .navlinks a{
@@ -81,6 +82,8 @@ body {
 .navicons{
   display: flex;
   align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 
@@ -168,7 +171,7 @@ p {
     width:90%;
     height:700px;
     margin-top: 0px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     align-items: center;
 }
 .greencontainter .abouttextcontainer {
@@ -205,7 +208,7 @@ p {
 }
 
 .footer{
-  padding: 50px;
+  padding: 30px;
   padding-inline: 150px;
   color: #efefef;
   display: flex;
