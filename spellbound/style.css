@@ -45,36 +45,26 @@ body {
   padding: 0px 15px;
 }
 
-a {
-color: 041d2;
-
-}
-
 #navbar{
-  width: 100%;
-  height: 60px;
+  width: 100w;
+  height: 65px;
   display: flex;
-  justify-content: space-between;
   background-color: #b28449ff;
-  text-align: center;
-  left: 100%;
-}
+  align-items: center;
+  justify-content: space-between;
+  }
 
-#navbar .navlinks{
+.navlinks{
   display: flex;
   gap: 2rem;
-}
-
-#navbar a{
-  position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: #fff;
   font-family: 'Lusitana', serif;
   text-decoration: none;
-}
-
-.navlinks li{
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .navlinks a{
@@ -90,18 +80,9 @@ color: 041d2;
 
 .navicons{
   display: flex;
-  position: relative;
   align-items: center;
-  justify-content: center;
 }
 
-#navbar .logo{
-  display: flex;
-  position: relative;
-  align-items: center center;
-  top: 6px;
-  justify-content: center;
-}
 
 .hero {
   width:100vw;
