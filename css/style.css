@@ -79,7 +79,7 @@ body {
         display:flex;
       }
       .card {
-        flex:33.3%;
+        flex:50%;
         background-color:rgb(238, 234, 220);
         font-family: 'Pixelify Sans', sans-serif;
         margin-right:20px;
