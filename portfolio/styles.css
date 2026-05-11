@@ -17,7 +17,7 @@
     --radius-lg: 22px;
     --radius-md: 14px;
     --radius-sm: 10px;
-    --max-w: 1100px;
+    --max-w: 14400px;
   }
   
   /* =======================================================
@@ -75,21 +75,34 @@
     background-size: 22px 22px, 22px 22px, 3px 3px;
   }
   
-  .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+  .wrap {   
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 120px;
+  }
   
   /* =======================================================
      Top nav (paper band)
      ======================================================= */
-  .topbar { padding: 14px 0; }
+     .topbar {
+      width: 100%;
+      background-color: #2F2828;
+      height: 80px;
+      display: flex;
+      align-items: center;  
+    }
   .topbar .row {
-    display: flex; align-items: center; justify-content: space-between;
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
   .logo {
     display: flex; align-items: center; gap: 10px;
-    color: #2F2828; font-family: "Arvo", serif; font-weight: 700; font-size: 18px;
+    color: #FBFFF0; font-family: "Arvo", serif; font-weight: 700; font-size: 18px;
   }
   .logo .mark {
-    width: 34px; height: 28px; background: #2F2828; border-radius: 4px;
+    width: 34px; height: 28px; background: #FBFFF0; border-radius: 4px;
     display: inline-flex; align-items: center; justify-content: center; color: var(--accent);
     font-family: "Permanent Marker", cursive; font-size: 14px;
   }
@@ -97,10 +110,10 @@
     list-style: none; margin: 0; padding: 0; display: flex; gap: 34px;
   }
   nav.main-nav a {
-    color: #2F2828; font-size: 14px; font-weight: 500; letter-spacing: .12em;
+    color: #FBFFF0; font-size: 14px; font-weight: 500; letter-spacing: .12em;
     text-transform: none;
   }
-  nav.main-nav a:hover { color: #000; }
+  nav.main-nav a:hover { color: #DCFFB0; }
   
   /* =======================================================
      Hero
@@ -388,3 +401,97 @@
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
   }
+
+  /* =======================================================
+    Changes
+     ======================================================= */
+
+     .logo {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      color: #FBFFF0;
+    }
+    
+    .logo-img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+    
+    .logo-divider {
+      width: 3px;
+      height: 42px;
+      border-radius: 999px;
+      background-color: #FBFFF0; 
+    }
+    
+    .logo-name {
+      font-family: 'Arvo', serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .signature-img {
+      width: 321px;
+      height: auto;
+      display: block;
+    }
+
+    .hero .row {
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 64px;
+
+}
+
+.hero-copy {
+
+  max-width: 620px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+.signature-img {
+
+  width: 220px;
+
+  height: auto;
+
+  display: block;
+
+  margin-bottom: 24px;
+
+}
+
+.hero-copy h1 {
+
+  margin: 0 0 24px;
+
+}
+
+.lead {
+
+  margin: 0 0 32px;
+
+  max-width: 560px;
+
+}
+
+.btn-row {
+
+  display: flex;
+
+  gap: 16px;
+
+  align-items: center;
+
+}
