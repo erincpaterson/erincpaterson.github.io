@@ -248,7 +248,7 @@
     .hero h1 {
       font-size: 22px;
       color: #2F2828;
-      margin: 0 0 32px;
+      margin: 0;
     }
 
     .hero p.lead {
@@ -257,7 +257,7 @@
       color: #2F2828;
       font-size: 14px;
       line-height: 1.5;
-      margin: 0 0 32px;
+      margin: 32px 0;
       padding-bottom: 16px;
     }
 
