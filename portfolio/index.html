@@ -151,50 +151,66 @@
   <div class="wrap">
     <h2 class="section-title">References</h2>
     <div class="ref-list">
-      <article class="ref-card">
-        <div class="ref-avatar"></div>
-        <div class="ref-body">
-          <h4>Name McName</h4>
-          <div class="role">Job Title, Company</div>
-          <p class="quote">"Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work?"</p>
+      
+      <div class="reference-row">
+        <div class="reference-main-card">
+          <div class="ref-avatar"></div>
+          <div class="ref-body">
+            <h4>Name McName</h4>
+            <div class="role">Job Title, Company</div>
+            <p class="quote">
+              “Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work.”
+            </p>
+          </div>
         </div>
-        <div class="ref-contact">
+
+        <div class="reference-contact-card">
           <div><b>Phone:</b> (503) 555-5555</div>
           <div><b>Email:</b> reference@gmail.com</div>
           <div><b>LinkedIn:</b> linkedin.com</div>
           <a class="btn accent" href="#">Read Letter</a>
         </div>
-      </article>
-      <article class="ref-card">
-        <div class="ref-avatar"></div>
-        <div class="ref-body">
-          <h4>Name McName</h4>
-          <div class="role">Job Title, Company</div>
-          <p class="quote">"Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work?"</p>
+      </div>
+
+      <div class="reference-row">
+        <div class="reference-main-card">
+          <div class="ref-avatar"></div>
+          <div class="ref-body">
+            <h4>Name McName</h4>
+            <div class="role">Job Title, Company</div>
+            <p class="quote">
+              “Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work.”
+            </p>
+          </div>
         </div>
-        <div class="ref-contact">
+        
+        <div class="reference-contact-card">
           <div><b>Phone:</b> (503) 555-5555</div>
           <div><b>Email:</b> reference@gmail.com</div>
           <div><b>LinkedIn:</b> linkedin.com</div>
           <a class="btn accent" href="#">Read Letter</a>
         </div>
-      </article>
-      <article class="ref-card">
-        <div class="ref-avatar"></div>
-        <div class="ref-body">
-          <h4>Name McName</h4>
-          <div class="role">Job Title, Company</div>
-          <p class="quote">"Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work?"</p>
+      </div>
+
+      <div class="reference-row">
+        <div class="reference-main-card">
+          <div class="ref-avatar"></div>
+          <div class="ref-body">
+            <h4>Name McName</h4>
+            <div class="role">Job Title, Company</div>
+            <p class="quote">
+              “Quote from reference about working together. What can you say about my work. Quote from reference. What can you say about my work.”
+            </p>
+          </div>
         </div>
-        <div class="ref-contact">
+        
+        <div class="reference-contact-card">
           <div><b>Phone:</b> (503) 555-5555</div>
           <div><b>Email:</b> reference@gmail.com</div>
           <div><b>LinkedIn:</b> linkedin.com</div>
           <a class="btn accent" href="#">Read Letter</a>
         </div>
-      </article>
-    </div>
-  </div>
+      </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
@@ -228,24 +244,21 @@
       </div>
 
       <form class="form-card" id="contactForm" novalidate>
-        <div class="form-row">
+        <div class="form-row single">
+
           <div class="form-field">
-            <label for="fname">First Name</label>
-            <input id="fname" name="fname" type="text" required>
+        
+            <label for="name">Name</label>
+        
+            <input id="name" name="name" type="text" required>
+        
           </div>
-          <div class="form-field">
-            <label for="lname">Last Name</label>
-            <input id="lname" name="lname" type="text" required>
-          </div>
+        
         </div>
-        <div class="form-row">
+        <div class="form-row" style="grid-template-columns: 1fr;">
           <div class="form-field">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required>
-          </div>
-          <div class="form-field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel">
           </div>
         </div>
         <div class="form-row" style="grid-template-columns: 1fr;">
@@ -269,12 +282,20 @@
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="wrap row">
-    <div class="logo">
-      <span class="mark">EP</span>
+    <div class="footer-logo">
+
+      <img src="imgs/eplogoblk.svg" alt="Erin Paterson logo" class="logo-img">
+    
+      <span class="logo-divider"></span>
+    
       <div>
-        <div>Erin Paterson</div>
+    
+        <div class="footer-name">Erin Paterson</div>
+    
         <div class="copy">©2026. All Rights Reserved.</div>
+    
       </div>
+    
     </div>
     <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">Scroll to Top</button>
   </div>
