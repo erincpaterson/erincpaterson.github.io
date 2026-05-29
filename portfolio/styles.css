@@ -17,8 +17,22 @@
     --radius-lg: 22px;
     --radius-md: 14px;
     --radius-sm: 10px;
-    --max-w: 14400px;
-  }
+    --max-w: 1440px;
+
+    --font-display: "Arvo", Georgia, serif;
+    --font-body: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
+    --type-section: 26px;
+    --type-hero-title: 22px;
+    --type-card-title: 20px;
+    --type-edit: 18px;
+    --type-edit-small: 16px;
+    --type-body: 16px;
+    --type-button: 16px;
+    --type-small: 12px;
+    --tracking-normal: .02em;
+    --tracking-ui: .08em;
+    --tracking-meta: .1em;
+    }
   
   /* =======================================================
      Base
@@ -32,44 +46,19 @@
   }
   
   body {
-    font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
+    font-family: var(--font-body);
+    font-size: var(--type-body);
     color: var(--text);
     background: var(--dark-grit);
     line-height: 1.5;
-    letter-spacing: .02em;
+    letter-spacing: var(--tracking-normal);
     min-width: 1280px;
   }
 
-  h1 {
-    font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-    margin: 0;
-    font-weight: 700;
-    letter-spacing: .01em;
-  }
-  
-  h2 {
-    font-family: "Arvo", Georgia, serif;
-    margin: 0;
-    font-weight: 200;
-    letter-spacing: .01em;
-  }
-  
-  h3 {
-    font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-    margin: 0;
-    font-weight: 700;
-    letter-spacing: .01em;
-  }
-  
-  h4 {
-    font-family: "Arvo", Georgia, serif;
-    margin: 0;
-    font-weight: 700;
-    letter-spacing: .01em;
-  }
+    h1, h2, h3, h4, p {
 
-  p {
-    margin: 0;
+      margin: 0;
+    
   }
 
   a {
@@ -85,6 +74,55 @@
     color: inherit;
   }
   
+  .section-title {
+
+    color: var(--cream);
+
+    font-family: var(--font-display);
+  
+    font-size: var(--type-section);
+  
+    font-weight: 500;
+  
+    letter-spacing: var(--tracking-normal);
+  
+    margin-bottom: 36px;
+    
+  }
+  
+  .rcard h3,
+  .pcard h3 {
+    margin-bottom: 18px;
+    font-family: var(--font-body);
+    font-size: var(--type-card-title);
+    font-weight: 500;
+    letter-spacing: var(--tracking-normal);
+  }
+  
+  .hero p.lead, .skills-list li, .exp-item .meta, .edu-item .meta, 
+  .reference-contact-card div, .info-row, .form-field label, .form-field input, .form-field textarea {
+    font-family: var(--font-body);
+    font-size: var(--type-body);
+    line-height: 1.5;
+  
+  }
+  
+  .btn,
+  
+  nav.main-nav a,
+  
+  .scroll-top {
+  
+    font-family: var(--font-body);
+  
+    font-size: var(--type-button);
+  
+    font-weight: 500;
+  
+    letter-spacing: var(--tracking-ui);
+  
+  }
+
   /* Grunge / paper texture overlay used on section backgrounds */
 
   .grit {
@@ -153,20 +191,7 @@
     color: #FBFFF0;
     font-family: "Arvo", serif;
     font-weight: 700;
-    font-size: 18px;
-  }
-
-  .logo .mark {
-    width: 34px;
-    height: 28px;
-    background: #FBFFF0;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    font-family: "Permanent Marker", cursive;
-    font-size: 14px;
+    font-size: var(--type-edit);
   }
 
   nav.main-nav ul {
@@ -194,7 +219,7 @@
     justify-content: center;
     border-radius: 8px;
     color: #FBFFF0;
-    font-size: 14px;
+    font-size: var(--type-button);
     font-weight: 500;
     letter-spacing: .08em;
     transition:
@@ -233,11 +258,6 @@
       padding-left: 80px;
     }
 
-    .hero-copy {
-      width: 700px;
-      padding-left: 80px;
-    }
-
     .hero-copy img.signature-img {
       width: 300px !important;
       height: auto !important;
@@ -246,7 +266,7 @@
     }
 
     .hero h1 {
-      font-size: 22px;
+      font-size: var(--type-hero-title);
       color: #2F2828;
       margin: 0;
     }
@@ -255,7 +275,7 @@
       width: 645px;
       max-width: 645px;
       color: #2F2828;
-      font-size: 14px;
+      font-size: var(--type-body);
       line-height: 1.5;
       margin: 32px 0;
       padding-bottom: 16px;
@@ -269,28 +289,71 @@
     }
 
     .btn {
-      width: 645px;
+      
       height: 40px;
+
       display: inline-flex;
+    
       align-items: center;
+    
       justify-content: center;
+    
       background-color: #2F2828;
+    
       color: #FBFFF0;
+    
       border-radius: 8px;
-      font-size: 14px;
+    
+      font-family: var(--font-body);
+    
+      font-size: var(--type-button);
+    
       font-weight: 500;
-      letter-spacing: .08em;
-      transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.15s ease;
+    
+      letter-spacing: var(--tracking-ui);
+    
+      position: relative;
+
+      transition: transform 0.15s ease;
+    
+    }
+
+    .hero .btn {
+
+      flex: 1;
+    
     }
     
+    .reference-contact-card .btn,
+    
+    .form-card .btn,
+    
+    .scroll-top {
+    
+      width: 180px;
+    
+    }
+
     .btn:hover {
-      background-color: #DCFFB0;
+
+      background-color: var(--accent);
+    
       color: #2F2828;
-      font-weight: 550;
-      transform: translateY(-1px);
+    
+    }
+
+    .btn.accent:hover, .scroll-top:hover {
+
+    background-color: var(--cream);
+
+    color: #2F2828;
+
+    }
+
+    .btn:hover, .scroll-top:hover, nav.main-nav a:hover {
+
+    transform: translateY(-1px);
+
     }
 
     .btn.accent {
@@ -298,8 +361,14 @@
       color: #2F2828;
     }
 
-    .btn.accent:hover { 
-      background: var(--accent-2);
+    .btn.accent:hover,
+
+    .scroll-top:hover {
+    
+      background-color: var(--cream);
+    
+      color: #2F2828;
+    
     }
   
   /* Hero portrait + socials */
@@ -341,7 +410,7 @@
   }
 
   .social:hover { 
-    transform: translateY(-2px); 
+    transform: translateY(-1px); 
   }
 
   .social svg {
@@ -356,13 +425,6 @@
   section.dark {
     padding-top: 40px;
     padding-bottom: 100px;
-  }
-
-  .section-title {
-    color: var(--cream);
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 36px;
   }
   
   /* =======================================================
@@ -398,18 +460,12 @@
     background-color: #DCFFB0;
     box-shadow: 0 12px 24px rgba(0,0,0,.4); 
   }
-  
-  .pcard {
-    font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-  }
 
   .pcard p {
     font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-    font-size: 14px; 
     color: #7f7878;
-    letter-spacing: .08em;
+    font-size: var(--type-body);
+    letter-spacing: var(--tracking-ui);
     font-weight: 400;
     margin-top: 3px;
   }
@@ -418,15 +474,11 @@
      Resume
      ======================================================= */
 
-     .resume-grid {
-
-      display: grid;
-    
-      grid-template-columns: 1fr 1fr;
-    
-      gap: 40px;
-    
-    }
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
   
   .rcard {
     background: var(--card);
@@ -443,17 +495,6 @@
     background:
       repeating-linear-gradient(45deg, rgba(255,255,255,.015) 0 2px, transparent 2px 7px);
     pointer-events: none;
-  }
-  
-  .rcard h3 {
-    font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: .02em;
-    line-height: 1.5;
-    letter-spacing: .02em;
-    color: var(--cream);
-    margin-bottom: 18px;
   }
   
   .rcard.tall {
@@ -473,52 +514,62 @@
   .exp-item h4, 
   .edu-item h4 {
     font-family: "Arvo", Georgia, serif;
-    font-size: 16px;
+    font-size: var(--type-edit-small);
     color: var(--accent);
     font-weight: 500;
     margin-bottom: 4px;
     letter-spacing: .04em;
   }
 
-  .exp-item .meta, .edu-item .meta {
-    font-size: 14px;
+  .ref-body .name {
+
+    font-family: var(--font-display);
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    letter-spacing: var(--tracking-normal);
+
+    color: var(--cream);
+
+}
+
+  .ref-header {
+
+    min-height: 60px; /* same height as avatar */
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+  .exp-item .meta, .edu-item .meta, .ref-body .role, footer .copy {
+    font-family: var(--font-body);
     color: var(--text-dim);
-    letter-spacing: .1em;
-    margin-bottom: 4px;
+    letter-spacing: var(--tracking-ui);
   }
 
   .skills-list {
-
     list-style: none;
-    
     margin: 0;
-    
     padding: 0;
-    
     min-height: 310px;
-    
     display: flex;
-    
     flex-direction: column;
-    
     justify-content: space-between;
-    
     }
   
   .skills-list li {
-
     display: flex;
-  
     align-items: center;
-  
     font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
-  
-    font-size: 14px;
-  
+    font-size: var(--type-body);
     color: var(--text-dim);
-  
     letter-spacing: .03em;
-  
   }
   
 
@@ -527,31 +578,19 @@
   }
 
   .skills-list li::before {
-
     content: "●";
-  
     color: var(--text-dim);
-  
     font-size: 6px;
-  
     margin-right: 10px;
-  
     position: relative;
-  
   }
   
   .tools-row {
-
     display: flex;
-  
     justify-content: center;
-  
     align-items: center;
-  
     gap: 20px;
-  
     padding-top: 20px;
-  
   }
   
   .tool {
@@ -564,7 +603,7 @@
     align-items: center; 
     justify-content: center;
     color: var(--text-dim); 
-    font-size: 14px;
+    font-size: var(--type-body);
   }
   
   /* =======================================================
@@ -572,128 +611,91 @@
      ======================================================= */
 
      .ref-list {
-
       display: flex;
-    
       flex-direction: column;
-    
       gap: 40px;
-    
     }
     
     .reference-row {
-
       display: grid;
-    
       grid-template-columns: 1fr 400px;
-    
       gap: 40px;
-    
     }
     
     .reference-main-card {
-      
       height: 180px;
-
       background: var(--card);
-    
       border-radius: var(--radius-lg);
-    
       padding: 24px;
-    
       display: flex;
-    
       gap: 20px;
-    
       align-items: flex-start;
-    
       box-shadow: var(--shadow);
-    
     }
     
     .reference-contact-card {
-     
       height: 180px;
-      
       background: var(--card);
-    
       border-radius: var(--radius-lg);
-    
       padding: 24px;
-    
       display: flex;
-    
       flex-direction: column;
-    
       justify-content: space-between;
-    
       box-shadow: var(--shadow);
-    
     }
     
     .reference-contact-card div {
-    
-      font-size: 14px;
-    
+      font-size: var(--type-body);
       color: var(--text-dim);
-    
-      line-height: 1.8;
-    
+      line-height: 1.4;
     }
     
     .reference-contact-card b {
-    
       color: var(--cream);
-    
     }
     
     .reference-contact-card .btn {
-    
+
       width: 100%;
     
-      margin-top: 20px;
+      height: 40px;
+    
+      min-height: 40px;
+    
+      flex-shrink: 0;
+    
+      margin-top: 12px;
+    
     }
 
     .ref-body {
-
+      font-size: var(--type-edit-small);
+      font-family: var(--font-body);
       display: flex;
-    
       flex-direction: column;
-    
       height: 100%;
-    
     }
 
     .ref-body .quote {
-
       margin-top: auto;
-    
       margin-bottom: auto;
-
       padding-left: 16px;
-    
       padding-right: 56px;
-    
+      font-family: var(--font-body);
+      font-size: var(--type-body);
+      font-style: normal;
+      color: var(--text-dim);
     }
 
     .ref-avatar {
-
       width: 60px;
-    
       height: 60px;
-    
       min-width: 60px;
-    
       border-radius: 50%;
-    
       background: #8a8077;
-    
       box-shadow:
-    
         inset 0 4px 8px rgba(0,0,0,.3),
-    
         0 2px 6px rgba(0,0,0,.15);
-    
     }
 
     /* =======================================================
@@ -701,27 +703,17 @@
      ======================================================= */
   
      .contact-grid {
-
       display: grid;
-    
       grid-template-columns: 400px 1fr;
-    
       gap: 40px;
-    
       align-items: stretch;
-    
     }
     
     .contact-left {
-
       display: flex;
-    
       flex-direction: column;
-    
       gap: 40px;
-    
       height: 100%;
-    
     }
     
     .invite {
@@ -732,18 +724,18 @@
       background: var(--cream);
       color: #2F2828;
       border-radius: var(--radius-md);
-      padding: 48px;
+      padding: 32px 40px;
       box-shadow: var(--shadow);
     }
   
     .invite h3 {
       font-family: "Arvo", serif;
-      font-size: 18px;
+      font-size: var(--type-body);
       margin-bottom: 10px;
     }
   
     .invite p { 
-      font-size: 12px; 
+      font-size: var(--type-body);
       color: #5a5252;
       line-height: 1.5; }
   
@@ -765,7 +757,8 @@
       align-items: center;
       gap: 14px;
       padding: 24px 0;
-      font-size: 12px;
+      font-size: var(--type-body);
+      color: var(--text-dim);
       border-bottom: 1px dashed rgba(255,255,255,.08);
     }
   
@@ -799,33 +792,26 @@
     }
   
     .form-row {
-
       display: grid;
-    
       grid-template-columns: 1fr 1fr;
-    
       gap: 24px;
-    
       margin-bottom: 24px;
-    
     }
 
     .form-row.single {
-
       grid-template-columns: 1fr;
-    
     }
   
     .form-field { 
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 6px; }
+      gap: 10px; }
   
     .form-field label {
-      font-size: 14px; 
+      font-size: var(--type-small);
       letter-spacing: .12em; 
-      color: var(--cream);
+      color: var(--text-dim);
       text-transform: none;
     }
   
@@ -833,7 +819,7 @@
       background: var(--cream);
       border: none; border-radius: 8px;
       padding: 10px 12px;
-      font: 14px;
+      font-size: var(--type-body);
       font-family: "Niveau Grotesk", "Space Grotesk", system-ui, sans-serif;
       color: #2F2828;
       outline: none;
@@ -849,21 +835,13 @@
     }
   
     .form-card .btn {
-
       width: 180px;
-    
       height: 40px;
-    
       margin-top: 40px;
-    
       margin-left: auto;
-    
       display: flex;
-    
       align-items: center;
-    
       justify-content: center;
-    
     }
     
     /* =======================================================
@@ -871,15 +849,10 @@
        ======================================================= */
   
     footer.site-footer {
-
       background: var(--dark-grit-2);
-      
       padding: 32px 0;
-      
       color: var(--text);
-      
       border-top: 1px solid rgba(255,255,255,.08);
-      
     }
   
     footer.site-footer .row {
@@ -888,76 +861,44 @@
   
     footer .copy {
 
-      font-size: 11px;
+      font-size: var(--type-small);
     
       color: var(--text-dim);
     
-      letter-spacing: .12em;
+      letter-spacing: var(--tracking-meta);
     
       margin-top: 4px;
     
     }
 
     .footer-logo {
-
       display: flex;
-    
       align-items: center;
-    
       gap: 30px;
-    
     }
     
     .footer-name {
-    
       font-family: "Arvo", serif;
-    
-      font-size: 18px;
-    
+      font-size: var(--type-edit);
       font-weight: 400;
-    
       color: var(--text);
-    
     }
   
     .scroll-top {
-
       width: 180px;
-    
       height: 40px;
-    
       border-radius: 8px;
-    
       display: flex;
-    
       align-items: center;
-    
       justify-content: center;
-    
       background: var(--accent);
-    
       color: #2F2828;
-    
-      font-size: 14px;
-    
+      font-size: var(--type-button);
       font-weight: 500;
-    
       letter-spacing: .08em;
-    
       transition:
-    
         background-color 0.2s ease,
-    
         transform 0.15s ease;
-    
-    }
-    
-    .scroll-top:hover {
-
-      background-color: var(--cream);
-    
-      transform: translateY(-1px);
-    
     }
     
     /* =======================================================
@@ -974,45 +915,27 @@
        ======================================================= */
   
     .logo {
-  
       display: flex;
-    
       align-items: center;
-    
       gap: 30px;
-    
       color: #FBFFF0;
-    
     }
     
     .logo-img {
-    
       height: 42px;
-    
       width: auto;
-    
       display: block;
-    
     }
     
     .logo-divider {
-    
       width: 3px;
-    
       height: 42px;
-    
       border-radius: 999px;
-    
       background-color: var(--text-dim);
-    
     }
     
     .logo-name {
-    
       font-family: 'Arvo', serif;
-    
-      font-size: 18px;
-    
+      font-size: var(--type-edit);
       font-weight: 400;
-    
     }
