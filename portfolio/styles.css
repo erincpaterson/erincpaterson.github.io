@@ -623,7 +623,7 @@
     }
     
     .reference-main-card {
-      height: 180px;
+      height: 200px;
       background: var(--card);
       border-radius: var(--radius-lg);
       padding: 24px;
@@ -634,7 +634,7 @@
     }
     
     .reference-contact-card {
-      height: 180px;
+      height: 200px;
       background: var(--card);
       border-radius: var(--radius-lg);
       padding: 24px;
@@ -717,7 +717,7 @@
     }
     
     .invite {
-      height: 180px;
+      height: 200px;
       display: flex;
       flex-direction: column;
       justify-content: center;
