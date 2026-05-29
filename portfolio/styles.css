@@ -907,7 +907,7 @@
   
     .invite h3 {
       font-family: "Arvo", serif;
-      font-size: var(--type-body);
+      font-size: var(--type-card-title);
       margin-bottom: 10px;
     }
   
