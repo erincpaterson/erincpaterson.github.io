@@ -1116,3 +1116,224 @@
       font-size: var(--type-edit);
       font-weight: 400;
     }
+
+/* Case Study Overview Section */
+.case-study-overview {
+  position: relative;
+  padding: 60px 0 100px;
+  background-color: #2F2828;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.25) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0,0,0,.18), rgba(255,255,255,.02));
+  background-size: 3px 3px, 5px 5px, 100% 100%;
+  background-position: 0 0, 1px 2px, 0 0;
+}
+
+.case-study-overview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(45deg, rgba(0,0,0,.06) 0 2px, transparent 2px 7px);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.case-study-overview > * {
+  position: relative;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+/* Project Title */
+.project-title {
+  font-family: "Arvo", Georgia, serif;
+  font-size: 42px;
+  color: #DCFFB0;
+  margin-bottom: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Project Meta */
+.project-meta {
+  font-size: 20px;
+  color: #C9C0BB;
+  margin-bottom: 40px;
+  letter-spacing: 0.02em;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 100%;
+  height: 600px;
+  background: #8A8077;
+  border-radius: 22px;
+  box-shadow:
+    inset 0 6px 14px rgba(0,0,0,.25),
+    0 6px 18px rgba(0,0,0,.2);
+  margin-bottom: 40px;
+}
+
+/* Summary Grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Left Column */
+.summary-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Summary Block */
+.summary-block {
+  /* No additional styling needed */
+}
+
+.summary-heading {
+  font-family: "Arvo", Georgia, serif;
+  font-size: 20px;
+  color: #DCFFB0;
+  margin-bottom: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.summary-text {
+  font-size: 16px;
+  color: #C9C0BB;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bullet Lists */
+.bullet-list,
+.goals-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bullet-list li,
+.goals-list li {
+  display: flex;
+  align-items: start;
+  font-size: 16px;
+  color: #C9C0BB;
+  line-height: 1.6;
+}
+
+.bullet-list li::before {
+  content: "●";
+  color: #DCFFB0;
+  font-size: 8px;
+  margin-right: 12px;
+  margin-top: 8px;
+}
+
+.goals-list li::before {
+  content: "●";
+  color: #DCFFB0;
+  font-size: 8px;
+  margin-right: 12px;
+  margin-top: 8px;
+}
+
+.goals-list strong {
+  color: #FBFFF0;
+}
+
+/* Project Details Card */
+.project-details-card {
+  position: relative;
+  overflow: visible;
+  background: #2F2828;
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  height: fit-content;
+}
+
+.project-details-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.015) 0 2px, transparent 2px 7px);
+  pointer-events: none;
+}
+
+.details-heading {
+  position: relative;
+  font-family: "Arvo", Georgia, serif;
+  font-size: 18px;
+  color: #DCFFB0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.details-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-item {
+  padding-bottom: 24px;
+  border-bottom: 1px dashed rgba(255,255,255,.08);
+}
+
+.detail-item.last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #DCFFB0;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #C9C0BB;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .project-title {
+    font-size: clamp(28px, 5vw, 42px);
+  }
+
+  .hero-image {
+    height: clamp(300px, 50vw, 600px);
+  }
+}
