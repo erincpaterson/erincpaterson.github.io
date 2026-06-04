@@ -241,6 +241,19 @@
 
     .hero {
       padding: 60px 0 100px;
+
+      position: relative;
+    
+      overflow: hidden;
+
+      background-image: url("imgs/medgrid.png");
+    
+      background-size: cover;
+    
+      background-position: center;
+    
+      background-repeat: no-repeat;
+    
     }
 
     .hero .row {
@@ -248,6 +261,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 96px;
+      position: relative;
     }
 
     .hero-copy {
@@ -274,11 +288,39 @@
     .hero p.lead {
       width: 645px;
       max-width: 645px;
-      color: #2F2828;
+      color: #FBFFF0;
       font-size: var(--type-body);
       line-height: 1.5;
       margin: 32px 0;
       padding-bottom: 16px;
+    }
+
+    .hero-photo-wrap {
+    
+      position: absolute;
+    
+      right: -80px;
+    
+      top: 60%;
+
+      transform: translateY(-50%);
+    
+      height: 100%;
+    
+      display: flex;
+    
+      align-items: center;
+    
+    }
+    
+    .hero-photo {
+    
+      height: 510px;
+    
+      width: auto;
+    
+      display: block;
+    
     }
 
     .btn-row {
@@ -655,6 +697,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    
   }
   
   .rcard {
