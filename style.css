@@ -269,7 +269,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 80px;
+      padding-left: 0px;
     }
 
     .hero-copy img.signature-img {
@@ -688,6 +688,18 @@
         0 6px 18px rgba(0,0,0,.2);
     
     }
+
+    .case-image img {
+
+      width: 100%;
+    
+      height: 100%;
+    
+      object-fit: cover;
+    
+      display: block;
+    
+    }
   
   /* =======================================================
      Resume
@@ -941,7 +953,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: var(--cream);
+      background: var(--accent);
       color: #2F2828;
       border-radius: var(--radius-md);
       padding: 32px 40px;
@@ -1214,14 +1226,27 @@
 
 /* Hero Image */
 .hero-image {
+
   width: 100%;
-  height: 600px;
-  background: #8A8077;
+
+  height: 440px;
+
+  overflow: hidden;
+
+}
+
+.hero-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
   border-radius: 22px;
-  box-shadow:
-    inset 0 6px 14px rgba(0,0,0,.25),
-    0 6px 18px rgba(0,0,0,.2);
-  margin-bottom: 40px;
+
 }
 
 /* Summary Grid */
