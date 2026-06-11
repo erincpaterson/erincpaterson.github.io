@@ -1,0 +1,123 @@
+#moose-head {
+
+    animation: moose-head-bob 700ms ease-in-out infinite;
+  
+    transform-origin: center bottom;
+  
+  }
+  
+  @keyframes moose-head-bob {
+
+    0% {
+  
+      transform: translateY(0px) rotate(0.25deg);
+  
+    }
+  
+    50% {
+  
+      transform: translateY(-4px) rotate(-.25deg);
+  
+    }
+  
+    100% {
+  
+      transform: translateY(0px) rotate(0.25deg);
+  
+    }
+  
+  }
+
+#moosearm {
+
+    animation-name: moose-arm-play;
+  
+    animation-duration: 700ms;
+  
+    animation-timing-function: ease-in-out;
+  
+    animation-iteration-count: infinite;
+  
+    animation-direction: alternate;
+  
+    transform-origin: right center;
+  
+  }
+  
+  @keyframes moose-arm-play {
+  
+    0% {
+  
+      transform: rotate(0deg);
+  
+    }
+  
+    100% {
+  
+      transform: rotate(1deg);
+  
+    }
+  
+  }
+
+  #moosearmtwo {
+
+    animation: fret-hand 350ms ease-in-out infinite alternate;
+  
+    transform-origin: bottom center;
+  
+  }
+  
+  @keyframes fret-hand {
+  
+    0% {
+  
+      transform: translateY(0px) rotate(0deg);
+  
+    }
+  
+    100% {
+  
+      transform: translateY(3px) rotate(-.5deg);
+  
+    }
+  
+  }
+
+  .note {
+
+    transform-box: fill-box;
+  
+    transform-origin: center;
+  
+    animation: note-dance 700ms ease-in-out infinite alternate;
+  
+  }
+  
+  .note-two {
+  
+    animation-delay: 200ms;
+  
+  }
+
+  .note-three {
+
+    animation-delay: 300ms;
+  
+  }
+  
+  @keyframes note-dance {
+  
+    0% {
+  
+      transform: translateY(0px) rotate(-10deg);
+  
+    }
+  
+    100% {
+  
+      transform: translateY(-3px) rotate(10deg);
+  
+    }
+  
+  }
