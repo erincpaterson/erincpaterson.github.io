@@ -1,0 +1,111 @@
+* {
+
+    box-sizing: border-box;
+  
+  }
+  
+  html {
+  
+    scroll-snap-type: y mandatory;
+  
+  }
+  
+  body {
+
+    margin: 0;
+  
+    font-family: "Averia Serif Libre", serif;
+
+    color: #1f1f1f;
+  
+  }
+  
+  .poem-section {
+  
+    height: 100vh;
+  
+    scroll-snap-align: start;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    padding: 32px;
+  
+  }
+  
+  .poem-content {
+  
+    max-width: 700px;
+  
+    text-align: center;
+  
+  }
+  
+  .poem-content p {
+  
+    font-size: 32px;
+  
+    line-height: 1.4;
+  
+  }
+  
+  .poem-content h3 {
+  
+    font-size: 56px;
+  
+    margin-bottom: 16px;
+  
+  }
+
+  .poem-content p,
+
+  .poem-content h3 {
+
+  white-space: nowrap;
+
+}
+
+.section-one {
+
+    background: linear-gradient(135deg, #e8dab8, #91a872);
+  
+  }
+  
+  .section-two {
+  
+    background: linear-gradient(135deg, #91a872, #80d3d0);
+  
+  }
+  
+  .section-three {
+  
+    background: linear-gradient(135deg, #80d3d0, #d7c2d7);
+  
+  }
+  
+  .section-four {
+  
+    background: linear-gradient(135deg, #d7c2d7, #d98eb2);
+  
+  }
+  
+  .section-five {
+  
+    background: linear-gradient(135deg, #d98eb2, #e8dab8);
+  
+  }
+
+  @media (max-width: 700px) {
+
+    .poem-content p,
+  
+    .poem-content h3 {
+  
+      white-space: normal;
+  
+    }
+  
+  }
