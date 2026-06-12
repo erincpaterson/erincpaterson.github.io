@@ -1,0 +1,143 @@
+* {
+
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+
+    margin: 0;
+  
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .site-header {
+  
+    width: 100%;
+  
+    min-height: 6rem;
+  
+    padding: 1rem 2rem;
+  
+    border-bottom: 1px solid #333;
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+    gap: 2rem;
+  
+  }
+
+.logo,
+
+.main-nav,
+
+.nav-icons {
+
+    flex: 1;
+
+}
+  
+  .logo img {
+  
+    width: 4rem;
+  
+    display: block;
+  
+  }
+  
+.main-nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1.5rem;
+
+}
+
+.nav-icons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 1rem;
+
+}
+  
+  .main-nav a {
+  
+    color: #222;
+  
+    text-decoration: none;
+  
+    font-weight: 700;
+  
+  }
+  
+  .nav-icons img {
+  
+    width: 2rem;
+  
+    display: block;
+  
+  }
+
+  .container {
+
+    width: 85%;
+
+    margin: 0 auto;
+
+}
+
+.hero {
+
+    margin: 3rem 0;
+
+}
+
+.hero h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 1rem;
+
+}
+
+.hero p {
+
+    font-size: 16px;
+
+    max-width: 40rem;
+
+}
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+
+}
+
+footer {
+
+    width: 100%;
+
+    background-color: #000000; /* example green */
+
+    color: white;
+
+    padding: 1rem 0;
+
+    margin-top: 4rem;
+
+}
